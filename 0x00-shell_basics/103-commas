@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$(ls -1a | sed 's/^\.\{1,2\}$/&\//' | tr '\n' ',' | sed 's/,$/\n/' | sed 's/,$//')" 
+echo "$(ls -1ap | sed ':a;N;$!ba;s/\n/, /g' | sed 's/,$//')"    
