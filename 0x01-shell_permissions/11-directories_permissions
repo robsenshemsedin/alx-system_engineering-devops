@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod 777 *directory 
+chmod -R 755 */. 
